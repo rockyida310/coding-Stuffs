@@ -1,0 +1,67 @@
+.top{
+    width: 100%;
+    background-color: rgb(40, 36, 36);
+    color: white;
+    height: 50px;
+    position: sticky;
+    /* fixed at top on scrolling */
+    top: 0;
+    /* top: 0 for always at top */
+    display: flex; 
+    /* flex to keep elements inside it horizontal */
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 999;
+}
+
+.topLeft,.topRight{
+    flex: 3;
+    /* giving topLeft and topRight 3 unit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topCenter{
+    flex: 6;
+    /* giving center 6 units */
+}
+
+.topIcon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+}
+
+.topImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. */
+    cursor: pointer;
+}
+
+.topList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topListItem{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.topSearchIcon{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 15px;
+}
